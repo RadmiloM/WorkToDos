@@ -36,3 +36,8 @@ h1 {
     display: flex;
     gap: 5px;
 }
+
+.submit-button{
+    background-color: orange;
+    padding: 5px;
+}
