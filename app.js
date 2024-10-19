@@ -8,5 +8,14 @@ button.addEventListener('click', () => {
     const userInputValue = userInput.value;
     const listItem = document.createElement('li');
     listItem.textContent = userInputValue;
+    const closeButton = document.createElement('button');
+    closeButton.textContent = 'X';
+    closeButton.style.float = 'right';
+    closeButton.style.fontWeight = '800';
+    closeButton.style.backgroundColor = 'none';
+    closeButton.style.color = 'black';
+    closeButton.style.background = 'none';
+    closeButton.style.border = 'none';
+    listItem.appendChild(closeButton);
     ulContainer.appendChild(listItem);
 })
