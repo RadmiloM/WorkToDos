@@ -25,4 +25,5 @@ function styleCloseButton(closeButton) {
     closeButton.style.color = 'black';
     closeButton.style.background = 'none';
     closeButton.style.border = 'none';
+    closeButton.style.cursor = 'pointer';
 }
