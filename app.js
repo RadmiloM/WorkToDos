@@ -12,6 +12,9 @@ button.addEventListener('click', () => {
     styleCloseButton(closeButton);
     listItem.appendChild(closeButton);
     ulContainer.appendChild(listItem);
+    listItem.addEventListener('click', () => {
+        listItem.classList.toggle('task-done');
+    })
     closeButton.addEventListener('click', () => {
         ulContainer.removeChild(listItem);
     })
