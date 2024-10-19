@@ -25,9 +25,14 @@ h1 {
 }
 
 .input-text {
-    margin: auto;
     display: block;
-    min-width: 65%;
+    min-width: 27%;
     border-radius: 5px;
-    padding:5px;
+    padding: 5px;
+}
+
+.flex-container {
+    justify-content: center;
+    display: flex;
+    gap: 5px;
 }
