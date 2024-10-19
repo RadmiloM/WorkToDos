@@ -1,4 +1,5 @@
 const button = document.querySelector('button');
+const userInput = document.querySelector('input');
 button.addEventListener('click', () => {
-    console.log('button clicked');
+    console.log(userInput.value);
 })
