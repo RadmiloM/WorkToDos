@@ -9,6 +9,12 @@ button.addEventListener('click', () => {
     const listItem = document.createElement('li');
     listItem.textContent = userInputValue;
     const closeButton = document.createElement('button');
+    styleCloseButton(closeButton);
+    listItem.appendChild(closeButton);
+    ulContainer.appendChild(listItem);
+})
+
+function styleCloseButton(closeButton) {
     closeButton.textContent = 'X';
     closeButton.style.float = 'right';
     closeButton.style.fontWeight = '800';
@@ -16,6 +22,4 @@ button.addEventListener('click', () => {
     closeButton.style.color = 'black';
     closeButton.style.background = 'none';
     closeButton.style.border = 'none';
-    listItem.appendChild(closeButton);
-    ulContainer.appendChild(listItem);
-})
+}
